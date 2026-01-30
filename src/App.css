@@ -1,0 +1,151 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Page */
+
+.page {
+  background: #eef2ff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Chat box */
+
+.chatBox {
+  width: 400px;
+  height: 560px;
+  background: white;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Header */
+
+.header {
+  padding: 15px;
+  background: #4f46e5;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+
+/* Messages area */
+
+.messages {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Chat bubbles */
+
+.userMsg {
+  align-self: flex-end;
+  background: #4f46e5;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 12px;
+  max-width: 75%;
+}
+
+.botMsg {
+  align-self: flex-start;
+  background: #e5e7eb;
+  padding: 8px 12px;
+  border-radius: 12px;
+  max-width: 75%;
+}
+
+/* Input area */
+
+.inputArea {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  gap: 6px;
+}
+
+.inputArea input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+/* Buttons */
+
+.micBtn {
+  border: none;
+  padding: 8px 12px;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #22c55e;
+}
+
+.micBtn.listening {
+  background: #dc2626;
+}
+
+.sendBtn {
+  padding: 8px 14px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.sendBtn:hover {
+  opacity: 0.9;
+}
